@@ -600,6 +600,37 @@ a {
   color: var(--muted);
 }
 
+/* Compact form */
+.cta-card.compact {
+  padding: 18px 22px;
+}
+
+.cta-card.compact h3 {
+  font-size: 19px;
+}
+
+.cta-card.compact p {
+  font-size: 13px;
+  margin: 6px 0 12px;
+}
+
+.cta-card.compact label {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.cta-card.compact input,
+.cta-card.compact textarea {
+  margin-top: 4px;
+  padding: 8px 10px;
+  font-size: 14px;
+}
+
+.cta-card.compact .btn {
+  padding: 10px 18px;
+  margin-top: 4px;
+}
+
 /* Responsive */
 @media (max-width: 960px) {
   .layout {

@@ -31,7 +31,7 @@ function ConsultForm() {
 
   if (status === 'sent') {
     return (
-      <div className="cta-card">
+      <div className="cta-card compact">
         <span className="eyebrow">Request received</span>
         <h3>Thank you!</h3>
         <p>We've got your details. Our team will be in touch within one business day.</p>
@@ -41,7 +41,7 @@ function ConsultForm() {
   }
 
   return (
-    <form className="cta-card" onSubmit={handleSubmit}>
+    <form className="cta-card compact" onSubmit={handleSubmit}>
       <span className="eyebrow">Free consultation</span>
       <h3>Is AI recommending your brand?</h3>
       <p>Get a consultation on AI recommendations from the ROI Spectrum team.</p>
@@ -50,7 +50,7 @@ function ConsultForm() {
       <label>Work email *<input name="email" type="email" required /></label>
       <label>Phone<input name="phone" type="tel" /></label>
       <label>Website *<input name="website" placeholder="https://" required /></label>
-      <label>What would you like help with?<textarea name="message" rows="3" /></label>
+      <label>What would you like help with?<textarea name="message" rows="2" /></label>
 
       <button className="btn" disabled={status === 'sending'}>
         {status === 'sending' ? 'Sending…' : 'Get My Consultation'}
