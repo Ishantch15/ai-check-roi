@@ -44,13 +44,11 @@ function ConsultForm() {
     <form className="cta-card compact" onSubmit={handleSubmit}>
       <span className="eyebrow">Free consultation</span>
       <h3>Is AI recommending your brand?</h3>
-      <p>Get a consultation on AI recommendations from the ROI Spectrum team.</p>
-
       <label>Full name *<input name="name" required /></label>
       <label>Work email *<input name="email" type="email" required /></label>
       <label>Phone<input name="phone" type="tel" /></label>
       <label>Website *<input name="website" placeholder="https://" required /></label>
-      <label>What would you like help with?<textarea name="message" rows="2" /></label>
+      <label>What would you like help with?<textarea name="message" rows="1" /></label>
 
       <button className="btn" disabled={status === 'sending'}>
         {status === 'sending' ? 'Sending…' : 'Get My Consultation'}
